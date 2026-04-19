@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #190e0e;
+}
+.header {
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  padding: 10px;
+}
+
+
+/* HEADER FIJO ARRIBA */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white; /* cambia el color si quieres */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(248, 242, 242, 0.949);
+}
+
+/* ESPACIO PARA QUE NO SE ENCIME EL CONTENIDO */
+main {
+  margin-top: 70px; /* ajusta según el tamaño de tu header */
+}
+
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.nombre {
+  font-size: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#menu {
+
+  display: none;
+}
+
+#menu.activo {
+  display: block;
+}
+
+
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #e50e0e;
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 0.6;
+}
+
+a:visited {
+    color: #840000;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+    
