@@ -1,108 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #190e0e;
-}
-.header {
-  display: flex;
-  align-items: center;   /* centra verticalmente */
-  padding: 10px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #190e0e;
 }
 
-
-/* HEADER FIJO ARRIBA */
+/* HEADER */
 header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background: white; /* cambia el color si quieres */
+  background: white;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(248, 242, 242, 0.949);
 }
 
-/* ESPACIO PARA QUE NO SE ENCIME EL CONTENIDO */
-main {
-  margin-top: 70px; /* ajusta según el tamaño de tu header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-
+/* LOGO */
 .logo {
-  width: 60px;
-  height: auto;
-  margin-right: 10px;
+  width: 50px;
 }
 
+/* NOMBRE */
 .nombre {
-  font-size: 20px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-
+  color: black;
+  font-size: 18px;
 }
 
-#menu {
+/* BOTÓN MENÚ */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
 
+/* MENÚ */
+#menu {
   display: none;
+  background: white;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  text-align: center;
+  padding: 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 #menu.activo {
   display: block;
 }
 
+/* CONTENIDO */
+main {
+  margin-top: 80px;
+}
 
+section {
+  padding: 10px;
+}
 
+/* IMÁGENES */
+.img-menu {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
 
-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    text-align: center;
+/* TEXTO */
+h2 {
+  color: white;
+  text-align: center;
 }
 
 p {
-    color: gray;
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin: 20px;
+  color: gray;
+  text-align: center;
 }
 
-
-
-.logo img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-
-}
-
-a {
-    color: #ff0000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-a:hover {
-    color: #e50e0e;
-    text-decoration: underline;
-}
-
-a:active {
-    opacity: 0.6;
-}
-
-a:visited {
-    color: #840000;
-}
-
+/* FOOTER */
 footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
-    
+
+/* MODO PC */
+@media (min-width: 768px) {
+
+  .menu-icon {
+    display: none;
+  }
+
+  #menu {
+    display: block !important;
+  }
+
+  #menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #menu li {
+    padding: 10px 15px;
+  }
+}
