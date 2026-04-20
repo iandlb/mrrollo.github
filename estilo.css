@@ -161,14 +161,15 @@ footer {
     font-size: 20px;
     padding: 10px;
 }
-  footer {
+  .direccion {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-    footer a {
+   .direccion a {
     display: inline-block;
   }
+  
 }
 
 /* 💻 MODO PC */
