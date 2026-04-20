@@ -16,6 +16,25 @@ header {
   background: white;
   z-index: 1000;
 }
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 0.6;
+}
+
+a:visited {
+    color: #1e40af;
+}
 
 .header {
   display: flex;
@@ -24,16 +43,16 @@ header {
   padding: 10px;
 }
 
-/* TITULO */
+/* TITULOS H3 */
 h3 {
   margin: 5px 0;
   text-align: center;
-  font-size: 22px;
-  color: white;
   font-family: sans-serif;
+  font-size: 40px; /* tamaño normal en PC */
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
   background: linear-gradient(135deg, #ff0000, #f06666);
+  color: white;
 }
 
 /* LOGO */
@@ -100,34 +119,11 @@ section {
 h2 {
   color: white;
   text-align: center;
-  font-size: 22px;
 }
 
 p {
   color: gray;
   text-align: center;
-  font-size: 14px;
-}
-
-/* LINKS */
-a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: #1e3a8a;
-  text-decoration: underline;
-}
-
-a:active {
-  opacity: 0.6;
-}
-
-a:visited {
-  color: #1e40af;
 }
 
 /* FOOTER */
@@ -138,37 +134,35 @@ footer {
   padding: 10px;
 }
 
-/* 📱 MÓVIL (AJUSTES FINOS) */
-@media (max-width: 480px) {
-
-  h3 {
-    font-size: 18px;
-    padding: 8px;
-  }
-
-  .nombre {
-    font-size: 14px;
-  }
+/* 📱 MODO TELÉFONO */
+@media (max-width: 768px) {
 
   .menu-icon {
-    font-size: 24px;
+    display: block;
   }
 
-  #menu li {
-    padding: 8px;
+  #menu {
+    display: none;
   }
 
-  h2 {
+  #menu.activo {
+    display: block;
+  }
+
+  /* MENÚ VERTICAL */
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* H3 MÁS PEQUEÑOS */
+  h3 {
     font-size: 20px;
+    padding: 10px;
   }
-
-  p {
-    font-size: 13px;
-  }
-
 }
 
-/* 💻 PC */
+/* 💻 MODO PC */
 @media (min-width: 768px) {
 
   .menu-icon {
