@@ -24,22 +24,17 @@ header {
   padding: 10px;
 }
 
+/* TITULO */
 h3 {
   margin: 5px 0;
   text-align: center;
-  font-size: 10px;
-  color: darkred;
+  font-size: 22px;
+  color: white;
   font-family: sans-serif;
-  font-size: 100px;
   font-weight: bold;
-     text-align: center;
-    padding: 20px 20px;
-    background: linear-gradient(135deg, #ff0000, #f06666);
-    color: white;
-    display: block;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff0000, #f06666);
 }
-
-
 
 /* LOGO */
 .logo {
@@ -105,11 +100,34 @@ section {
 h2 {
   color: white;
   text-align: center;
+  font-size: 22px;
 }
 
 p {
   color: gray;
   text-align: center;
+  font-size: 14px;
+}
+
+/* LINKS */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+a:active {
+  opacity: 0.6;
+}
+
+a:visited {
+  color: #1e40af;
 }
 
 /* FOOTER */
@@ -118,31 +136,39 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  
 }
 
-a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+/* 📱 MÓVIL (AJUSTES FINOS) */
+@media (max-width: 480px) {
+
+  h3 {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .nombre {
+    font-size: 14px;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+  }
+
+  #menu li {
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
 }
 
-a:hover {
-    color: #1e3a8a;
-    text-decoration: underline;
-}
-
-a:active {
-    opacity: 0.6;
-}
-
-a:visited {
-    color: #1e40af;
-}
-
-
-/* MODO PC */
+/* 💻 PC */
 @media (min-width: 768px) {
 
   .menu-icon {
