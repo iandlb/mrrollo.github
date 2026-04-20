@@ -134,6 +134,7 @@ footer {
   padding: 10px;
 }
 
+
 /* 📱 MODO TELÉFONO */
 @media (max-width: 768px) {
 
@@ -159,6 +160,14 @@ footer {
   h3 {
     font-size: 20px;
     padding: 10px;
+}
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    footer a {
+    display: inline-block;
   }
 }
 
