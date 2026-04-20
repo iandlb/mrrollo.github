@@ -24,17 +24,22 @@ header {
   padding: 10px;
 }
 
-/* TITULOS H3 */
 h3 {
   margin: 5px 0;
   text-align: center;
+  font-size: 10px;
+  color: darkred;
   font-family: sans-serif;
-  font-size: 40px; /* tamaño normal en PC */
+  font-size: 100px;
   font-weight: bold;
-  padding: 20px;
-  background: linear-gradient(135deg, #ff0000, #f06666);
-  color: white;
+     text-align: center;
+    padding: 20px 20px;
+    background: linear-gradient(135deg, #ff0000, #f06666);
+    color: white;
+    display: block;
 }
+
+
 
 /* LOGO */
 .logo {
@@ -113,37 +118,31 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  
 }
 
-/* 📱 MODO TELÉFONO */
-@media (max-width: 768px) {
-
-  .menu-icon {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #menu.activo {
-    display: block;
-  }
-
-  /* MENÚ VERTICAL */
-  #menu ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* H3 MÁS PEQUEÑOS */
-  h3 {
-    font-size: 20px;
-    padding: 10px;
-  }
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-/* 💻 MODO PC */
+a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 0.6;
+}
+
+a:visited {
+    color: #1e40af;
+}
+
+
+/* MODO PC */
 @media (min-width: 768px) {
 
   .menu-icon {
